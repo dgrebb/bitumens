@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { IssuesProvider } from './context/IssuesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <IssuesProvider>
+  <React.StrictMode>
     <App />
-  </IssuesProvider>
+  </React.StrictMode>
 );
